@@ -7,11 +7,11 @@
 body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
-  background-color: #5dbcd2;
+  background-color: #fff;
 }
 
 .main-body {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0;/*grey*/
   padding: 0 20px;
 }
 
@@ -29,7 +29,7 @@ body {
       z-index: 10;
       padding-top: 20px;
       padding-bottom: 20px;
-      color: #fff;
+      color: #fff;/*white*/
       text-align: center;
   }
   
@@ -64,7 +64,53 @@ body {
   }
 }
 
-/*Contact us page - element id="other"*/
+/*Contact us page*/
+#contactH1{
+	color:#5dbcd2; 
+	font-size:2.5em; 
+	padding-top:0.5em;
+}
+
+#contactGetInTouch{
+	color:#5dbcd2; 
+	font-style:italic;
+}
+
 #other{
 	display: none;
+}
+
+.formBG{
+	background-color: #f0f0f0;
+}
+
+.buttonHolder{
+	display: block;
+    margin: 0 auto;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #5dbcd2;
+    border: 1px solid #5dbcd2;
+    color: #fff;
+    margin-right: 15px;
+	width:50%;
+}
+
+.formInput{
+	width:100%;
+}
+
+
+
+/*Donate page*/
+#DonateH1{
+	color:#5dbcd2;
+}
+.buyusacoffee{
+	color: #5dbcd2;
+	font-size: 1.5em;
+	font-style: italic;
 }

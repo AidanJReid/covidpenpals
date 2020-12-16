@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="2style.css">
-  <title>Covid PenPals</title>	
+  <title>Contact Us</title>	
   <!--Including the small bit of CSS here as well as in the stylesheet just for redundancy.
   <style>
 	#other{
@@ -56,55 +56,73 @@
 
     <div class="main-body container mt-3 mb-5 pb-3">
 		<div class="row">
-			<div class="col">
-				<h1>Contact Us</h1>
-				<p>Have a question? Get in touch!</p>
-				<p>We promise to answer any query no matter how big or small. Our office hours are 0800 to 1800, Monday to Saturday
-				and we endeavour to respond within two working days.</p>
-				<p>You can contact us by email using the form below. Alternatively, you can call us on landline 0121253516 
-				or on mobile  0877 7777 777.</p>
+			<div class="col-8 offset-2">
+			<div class="formBG">
+				<div class="row">
+					<div class="col">
+						<h1 class="text-center" id="contactH1">Contact Us</h1>
+						<p class="text-center" id="contactGetInTouch">Have a question?<br> Get in touch!</p>
+						<p class="text-center">We promise to answer any query no matter how big or small. 
+						You can contact us by email using the form below. 
+						Alternatively, you can call our landline on 0121253516 
+						or our mobile on 087 7777 777.</p>
+					</div>
+				</div>
 				<form onsubmit="formValidator()">
-					<table>
-						<tr>
-							<td>Your Name*</td>
-						</tr>
-						<tr>
-							<td><input type="text" id="name" name="name" required /></td><!--form input validated with required attribute and with JS alerts-->
-						</tr>
-						<tr>
-							<td>Your Email Address*</td>
-						</tr>
-						<tr>
-							<td><input type="email" id="email" name="email" required /></td>
-						</tr>
-						<tr>
-							<td>Subject*</td>
-						</tr>
-						<tr>
-							<td><select id="subject" onchange="otherSubject()"><!--This JS function, if 'Other' is selected, hides the dropdown list and displays a normal text input instead-->
-								<!--<option>--select--</option>//not sure whether to include this one-->
-								<option>I would like to register as a member of Covid PenPals.</option>
-								<option>I have an enquiry about the services provided by Covid PenPals.</option>
-								<option>I would like to volunteer for Covid PenPals.</option>
-								<option>I would like to make a large donation to Covid PenPals.</option>
-								<option>I would like to offer sponsorship to Covid PenPals.</option>
-								<option>Other (please specify).</option>
-							</select></td>
-						</tr>
-						<tr>
-							<td><input type="text" id="other" name="subject" size="55" required /></td>
-						</tr>
-						<tr>
-							<td>Your Message*</td>
-						</tr>
-						<tr>
-							<td><textarea rows="10" cols="100" name="message" id="message" required /></textarea></td>
-						</tr>
-						<tr>
-							<td><input type="submit" /></td>
-						</tr>
-					</table>
-				</form>
+					<div class="row">
+						<div class="col">
+							<p>
+								Email Address*
+								<input class="formInput" type="email" id="email" name="email" required />
+							</p><!--form input validated with required attribute and with JS alerts-->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-xs-12">
+							<p>
+								Name*
+								<input class="formInput" type="text" id="fName" name="fName" required />
+							</p>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<p>
+								Surname*
+								<input class="formInput" type="text" id="surname" name="surname" required />
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p>
+								Subject*							
+								<select id="subject" onchange="otherSubject()" class="formInput">
+									<option id="selectPaceholder" value="" disabled selected hidden>--select--</option>
+									<option>I would like to register as a member of Covid PenPals.</option>
+									<option>I have an enquiry about the services provided by Covid PenPals.</option>
+									<option>I would like to volunteer for Covid PenPals.</option>
+									<option>I would like to make a large donation to Covid PenPals.</option>
+									<option>I would like to offer sponsorship to Covid PenPals.</option>
+									<option>Other (please specify).</option>
+								</select>
+								<input class="formInput" type="text" id="other" name="subject" size="55" required />
+							</p><!--hidden until 'other' selected above-->
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p>
+								Message*
+								<textarea rows="5" class="formInput" name="message" id="message" required ></textarea>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">					
+							<p class="text-center"><input type="submit" value="Send" class="btn btn-full"/></p>
+						</div>
+					</div>
+				</form>								
+			</div>
 			</div>
 		</div>
 	</div>
@@ -133,7 +151,7 @@
           <p class="mb-0"><strong>Tel:</strong> 0121253516</p>
           <p><strong>Mob: </strong> 0877 7777 777</p>
           <p><strong>Email: </strong> team@covidpenpals.com</p>
-          <a href="#"><i class="fa fa-facebook mx-4" aria-hidden="true"></i></a></i><a href="#"><i class="fa fa-twitter"
+          <a href="#"><i class="fa fa-facebook mx-4" aria-hidden="true"></i></a><a href="#"><i class="fa fa-twitter"
               aria-hidden="true"></i></a>
         </div>
       </div>
@@ -148,39 +166,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-    <script>
-	function formValidator(){
-		/*alert("Success!");
-		}*/
-		var name = document.getElementById("name").value;
-		var email = document.getElementById("email").value;
-		var subject = document.getElementById("subject").value;
-		var message = document.getElementById("message").value;
-		
-		if (name == ""){
-			alert("Please provide your name."); 
-		}
-		if (email == ""){
-			alert("Please provide your email address.");
-		}
-		if (subject == ""){
-			alert("Please provide a subject.");
-		}
-		if (message == ""){
-			alert("Please provide a messsage.");
-		}
-		return false;
-	}
-	
-	document.getElementById("subject").onchange = function() {otherSubject()};
-	function otherSubject(){
-		var given = document.getElementById("subject").value;
-		if (given === "Other (please specify)."){
-			document.getElementById("other").style.display = "block";
-			document.getElementById("subject").style.display = "none";	
-		}
-	}
-  </script>
-
+    <script src="contactUsScript.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 /* Aidan Reid Stylesheet */
 
+/* HOME PAGE */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,9 +23,11 @@ body {
   padding-top: 20px;
 }
 
+/* Carousel */
+
 .carousel-item img {
   height: 70vh !important;
-  -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(60%);
   filter: grayscale(60%);
 }
 
@@ -46,16 +50,30 @@ body {
     font-size: 4rem;
   }
 
+  /* Content-image (old lady) */
+
   #content-image {
-    /* margin: 0 50px; */
     height: 250px;
   }
+
+  /* Footer */
 
   .footlinks p a {
     color: white !important;
   }
 
-  /* Media queries */
+  /* ABOUT US PAGE */
+
+  #excited-team {
+    text-transform: uppercase;
+    font-size: 26px;
+  }
+
+  #history li {
+    margin-left: 50px; /*indenting bullet points on 'history section*/
+  }
+
+  /* MEDIA QUERIES */
 
 /* Small devices (426px and down) */
 @media screen and (max-width: 426px) {
@@ -68,8 +86,4 @@ body {
   .navbar-brand {
     display: none;
   }
-}
-
-#history li {
-  margin-left: 50px;
 }

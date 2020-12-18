@@ -1,0 +1,92 @@
+/*--Below html code to be added to link this style sheet for different home page style--*/
+
+/*--<link rel="stylesheet" href="heitor-style.css">--*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  background-color: #FFF;
+}
+
+.main-body {
+  background-color: #f0f0f0;
+  padding: 0 20px;
+    
+}
+
+/*--Hide carousel to be able to add new style--*/
+#carouselExampleIndicators{
+    display: none
+}
+
+/*--Start Nav bar --*/
+.navbar {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(images/writing.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    background-attachment: fixed;
+}
+
+#navbarTogglerDemo01{
+  position: absolute; 
+  top: 0; 
+  width: 100%;
+border: none;
+}
+
+.navbar-toggler {
+    position: absolute; 
+    top: 0; 
+    width: 100%;
+    border: none;
+}
+
+  #content-image {
+    /* margin: 0 50px; */
+    height: 250px;
+      margin: 0 auto;    
+  }
+
+/*--Start link decoration --*/
+.nav-item a:link,
+.nav-item a:visited {
+    padding: 8px 0;
+    color: #535353;
+    text-decoration: none;
+    font-size: 105%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+ border-bottom: 2px solid #5dbcd2;   
+}
+
+  .footlinks p a {
+    color: white;
+  }
+
+  /* Media queries */
+
+/* Small devices (426px and down) */
+@media screen and (max-width: 426px) {
+  .carousel-item img {
+    height: 80vh !important;
+  }
+  .carousel-title {
+    font-size: 1.5rem;
+  }
+  .navbar-brand {
+    display: none;
+  }
+}
+

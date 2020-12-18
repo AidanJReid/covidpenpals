@@ -1,0 +1,76 @@
+/* Aidan Reid Extra Stylesheet */
+
+/* HOME PAGE */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  background-color: rgba(15, 133, 133, 0.479);
+}
+
+.main-body {
+  background-color: whitesmoke;
+  padding: 0 10px;
+}
+
+.main-header {
+  padding-top: 10px;
+}
+
+/* Carousel */
+
+.carousel-item img {
+  height: 70vh !important;
+}
+
+.carousel-caption {
+  position: absolute;
+      right: 15%;
+      top: 120px;
+      left: 15%;
+      z-index: 10;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #fff;
+      text-align: center;
+  }
+  
+  .carousel-title {
+    background-color: #5dbcd2;
+    opacity: 0.88 !important;
+    padding: 5px 10px;
+    font-size: 4rem;
+  }
+
+  /* Content-image (old lady) */
+
+  #content-image {
+    height: 200px;
+  }
+
+  /* Footer */
+
+  .footlinks p a {
+    color: red !important;
+  }
+
+  /* MEDIA QUERIES */
+
+/* Small devices (426px and down) */
+@media screen and (max-width: 426px) {
+  .carousel-item img {
+    height: 80vh !important;
+  }
+  .carousel-title {
+    font-size: 1.5rem;
+  }
+  .navbar-brand {
+    display: none;
+  }
+}
